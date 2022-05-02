@@ -82,6 +82,15 @@ form.addEventListener("submit", function (event) {
 	// validate the form
     localStorage.setItem("username", "");
     localStorage.setItem("password","");
+	
+    localStorage.setItem("name","");
+    localStorage.setItem("address","");
+    localStorage.setItem("phone","");
+    localStorage.setItem("city","");
+    localStorage.setItem("email","");
+    localStorage.setItem("objective","");
+    localStorage.setItem("skill","");
+    localStorage.setItem("education","");
 
     window.location = 'index.html';
 
