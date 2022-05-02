@@ -33,7 +33,7 @@ window.onload = function(){
     var username = localStorage.getItem("username");
     var password = localStorage.getItem("password");
     if(username != "ali"  && password != "12345678"){
-      window.location = 'login.html';
+      window.location = 'index.html';
     }
     document.getElementById("name").innerHTML = localStorage.getItem("name");
     document.getElementById("address").innerHTML = localStorage.getItem("address");
