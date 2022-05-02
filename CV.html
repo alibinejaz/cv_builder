@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My CSS Integration</title>
+        <link rel="stylesheet" href="css\mystyle.css">
+    </head>
+
+    <body>   
+        <center class="noPrint">
+            <form action="index.html" method="post" id="logout"> 
+                <button type="submit">Logout</button>
+            </form> 
+            <center>     
+                <form action="" method="post" id="download" class="noPrint"> 
+                    <button type="submit">Download CV</button>
+                </form>
+            </center>
+            <form action="cv_form.html" method="post" id="newCV"> 
+                <button type="submit">Create New CV</button>
+            </form>
+        </center>
+        <div  class="noPrint">
+            <button class="tablink" onclick="openPage('Temp1', this, 'red')">Template 1</button>
+            <button class="tablink" onclick="openPage('Temp2', this, 'green')" id="defaultOpen">Template 2</button>
+            <button class="tablink" onclick="openPage('Temp3', this, 'blue')">Template 3</button>
+            <button class="tablink" onclick="openPage('Temp4', this, 'orange')">Template 4</button>
+        </div>
+        <div id="Temp1" class="tabcontent">
+            <h1>My CV</h1>
+            <div class="banner">
+                <h2 id="name">Ali Bin Ejaz</h2>
+            </div>
+            
+            <div class="specialStyle2">
+                <p id="address">71C Phase 2 Ext, DHA Karachi. 
+                <p id="phone">923174706626  
+                <p id="city">Karachi, 74200  
+                <p id="email">alibinnnejaz@yahoo.com 
+            </div>
+            <h2 class="toInteract">Objective</h2>
+            <p class="myParagraph" id="objective">I am a hardworking and ambitious individual with a great passion for the bright
+                future. I am currently in my final year of studying Bachelors Of Computer Science at
+                University of Karachi. I have excellent communication skills, enabling me to
+                effectively communicate with a wide range of people.</p>
+
+            <h2 class="toInteract">Skills</h2>
+            <div class="myParagraph" id="skill">
+                <ul>
+                    <li>Good Communication Skills</li>
+                    <li>Good at MS Office.</li>
+                    <li>Excellent Typing Skills.</li>
+                    <li>Problem Solving Skills</li>
+                    <li>Basic Video\Photo editing at Photoshop\illustrator\Sony Vegas</li>
+                </ul>
+            </div>
+
+            <h2 class="toInteract">Education</h2>
+            <div class="myParagraph" id="education">
+                <ul>
+                    <li>Degree: Matriculation – Computer Science</li>
+                        <ul>
+                            <li>Board: Board Of Secondary Education Karachi</li>
+                            <li>Grade: A+</li>
+                        </ul>
+                    <li>Degree: Intermediate - Pre – Engineering</li>
+                        <ul>
+                            <li>Board:  DJ Sindh Govt. Science College, Karachi</li>
+                            <li>Grade: A</li>
+                        </ul>
+                    <li>Degree: Unndergraduate – Computer Science</li>
+                        <ul>
+                            <li>Board: University Of Karachi, Main University Rd, Karachi</li>
+                            <li>CGPA: 2.7</li>
+                        </ul>
+                </ul>
+            </div>  
+        </div>
+        <div id="Temp2" class="tabcontent">
+            <h1>My CV</h1>
+            <center><h1 id="name1">My CV</h1></center>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <td><p id="address1">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td><p id="phone1">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <td><p id="city1">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><p id="email1">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <th>Objective</th>
+                    <td><p id="objective1"></p></td>
+                </tr>
+                <tr>
+                    <th>Skill</th>
+                    <td><p id="skill1"></p></td>
+                </tr>
+                
+                <tr>
+                    <th>Education</th>
+                    <td><p id="education1"></p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Temp3" class="tabcontent">
+            <h1>My CV</h1>
+            <center><h1 id="name2">My CV</h1></center>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Email</th>
+                    
+                </tr>
+                <tr>
+                    <td><p id="address2">Ali Bin Ejaz</p></td>
+                    <td><p id="phone2">Ali Bin Ejaz</p></td>
+                    <td><p id="city2">Ali Bin Ejaz</p></td>
+                    <td><p id="email2">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+                <tr>
+                    <th>Objective</th>
+                    <td colspan="3"><p id="objective2"></p></td>
+                </tr>
+                <tr>
+                    <th>Skill</th>
+                    <td colspan="3"><p id="skill2"></p></td>
+                </tr>
+                
+                <tr>
+                    <th>Education</th>
+                    <td colspan="3"><p id="education2"></p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Temp4" class="tabcontent">
+            <h1>My CV</h1>
+            <center><h1 id="name3">My CV</h1></center>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Email</th>
+                    
+                </tr>
+                <tr>
+                    <td><p id="address3">Ali Bin Ejaz</p></td>
+                    <td><p id="phone3">Ali Bin Ejaz</p></td>
+                    <td><p id="city3">Ali Bin Ejaz</p></td>
+                    <td><p id="email3">Ali Bin Ejaz</p></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+                <tr>
+                    <th colspan="4">Objective</th>
+                </tr>
+                <tr>
+                    <td colspan="4"><p id="objective3"></p></td>
+                </tr>
+                <tr>
+                    <th colspan="4">Skill</th>
+                </tr>
+                <tr>
+                    <td colspan="4"><p id="skill3"></p></td>
+                </tr>
+                <tr>
+                    <th colspan="4">Education</th>
+                </tr>
+                <tr>
+                    <td colspan="4"><p id="education3"></p></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    
+    <script  type="text/javascript" src="js/myjs.js"></script>
+</html>
